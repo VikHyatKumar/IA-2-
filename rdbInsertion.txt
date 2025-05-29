@@ -1,0 +1,18 @@
+Insertion operation of a Red-Black tree follows the same insertion algorithm of a binary search tree. 
+The elements are inserted following the binary search property and as an addition, the nodes are color
+coded as red and black to balance the tree according to the red-black tree properties.
+
+Procedure to insert an element into a red-black tree by maintaining both binary search tree and red black tree properties.
+
+Case 1 − Check whether the tree is empty; make the current node as the root and color the node black if it is empty.
+
+Case 2 − But if the tree is not empty, we create a new node and color it red. Here we face two different cases −
+
+-> If the parent of the new node is a black colored node, we exit the operation and tree is left as it is.
+
+-> If the parent of this new node is red and the color of the parent's sibling(uncle) is either black or null,
+   we apply a suitable rotation and recolor accordingly.
+
+-> If the parent of this new node is red and color of the parent's uncle is red, recolor the parent,
+   the uncle and grandparent nodes to black. The grandparent is recolored only if it is not the root node;
+   if it is the root node recolor only the parent and the sibling.

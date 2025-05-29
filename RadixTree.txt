@@ -1,0 +1,26 @@
+Radix Tree (also known as a Compact Prefix Tree or Patricia Trie)
+
+Definition:
+A Radix Tree is a space-optimized trie data structure where each node with only one child is merged with its child. It is used for efficient storage and retrieval of strings, especially when many strings share common prefixes.
+
+Key Properties:
+- Each edge is labeled with a sequence of characters (not just one).
+- No node has only one child (except possibly the root).
+- Common prefixes are stored only once.
+
+Basic Operations:
+1. Insertion: Add a string by traversing the tree and splitting/merging edges as needed.
+2. Search: Follow edges matching the input string segments.
+3. Deletion: Remove a string and merge nodes if necessary.
+
+Use Cases:
+- IP routing tables
+- Auto-complete engines
+- Dictionary implementations
+
+Advantages:
+- Efficient memory usage for large sets of strings with shared prefixes.
+- Fast lookups and insertions.
+
+Disadvantages:
+- More complex to implement than a standard trie.

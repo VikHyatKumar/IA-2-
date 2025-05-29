@@ -1,0 +1,19 @@
+Levenshtein distance is a measure of the similarity between two strings, which takes into account
+the number of insertion, deletion and substitution operations needed to transform one string into
+the other. 
+
+Operations in Levenshtein distance are:
+Insertion: Adding a character to string A.
+Deletion: Removing a character from string A.
+Replacement: Replacing a character in string A with another character.
+
+Let's see an example that there is String A: "kitten" 
+which need to be converted in String B: "sitting" so 
+we need to determine the minimum operation required
+
+Example:-
+kitten → sitten (substitution of “s” for “k”)
+sitten → sittin (substitution of “i” for e”)
+sittin → sitting (insertion of “g” at the end).
+In this case it took three operation do this, so the levenshtein distance will be 3.
+

@@ -1,0 +1,21 @@
+B + Tree is a variation of the B-tree data structure. In a B + tree, data pointers are stored 
+only at the leaf nodes of the tree. In this tree, structure of a leaf node differs from the 
+structure of internal nodes. The leaf nodes have an entry for every value of the search field, 
+along with a data pointer to the record (or to the block that contains this record). The leaf 
+nodes of the B+ tree are linked together to provide ordered access to the search field to 
+the records. Internal nodes of a B+ tree are used to guide the search. Some search field values 
+from the leaf nodes are repeated in the internal nodes of the B+ tree.
+
+
+Properties of B+ trees:-
+
+Every node in a B+ Tree, except root, will hold a maximum of m children and (m-1) keys,
+and a minimum of ⌈m/2⌉ children and ⌈m−1/2⌉ keys, since the order of the tree is m.
+
+The root node must have no less than two children and at least one search key.
+
+All the paths in a B tree must end at the same level, i.e. the leaf nodes must be at the same level.
+
+A B+ tree always maintains sorted data.
+
+The operations supported in B+ trees are Insertion, deletion and searching with the time complexity of O(log n) for every operation.
