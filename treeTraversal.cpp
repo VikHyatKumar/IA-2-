@@ -21,6 +21,8 @@ struct Node {
     cout << node->data << " ";
     printInorder(node->right);
 }
+//Tiem Complexity: O(n)
+//Space Complexity: O(h) where h is the height of the tree
 
     //PREORDER TRAVERSAL
 
@@ -32,6 +34,8 @@ struct Node {
         printPreorder(node->left);
         printPreorder(node->right);
     }
+    //time Complexity: O(n)
+//Space Complexity: O(h) where h is the height of the tree
 
 
     //POST ORDER TRAVERSAL
@@ -45,6 +49,7 @@ struct Node {
         cout << node->data << " ";
     }
     };
+//Time Complexity: O(n) 
     
  int main() {
         Node* root = new Node(1);

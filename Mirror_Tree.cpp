@@ -1,3 +1,7 @@
+//mirror tree
+// This code checks if a binary tree is symmetric (mirror image of itself).
+// A binary tree is symmetric if the left subtree is a mirror reflection of the right subtree.
+
 #include <iostream>
 using namespace std;
 struct TreeNode {
