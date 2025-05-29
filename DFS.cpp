@@ -13,11 +13,9 @@ A standard DFS implementation puts each vertex of the graph into one of two cate
 The purpose of the algorithm is to mark each vertex as visited while avoiding cycles.
 
 The DFS algorithm works as follows:
+recursively visit each unvisited adjacent vertex, marking it as visited,
+and then continue the process until all vertices reachable from the starting vertex have been visited.      
 
-1.Start by putting any one of the graph's vertices on top of a stack.
-2.Take the top item of the stack and add it to the visited list.
-3.Create a list of that vertex's adjacent nodes. Add the ones which aren't in the visited list to the top of the stack.
-4.Keep repeating steps 2 and 3 until the stack is empty.
 */
 #include<vector>
 #include<iostream>
